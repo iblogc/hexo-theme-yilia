@@ -1,26 +1,30 @@
 # Header
 menu:
   主页: /
-  所有文章: /archives
-  # 随笔: /tags/随笔
+  所有: /archives 
+  # 随笔: /categories/随笔
+  历史: /history
+  # 站点地图: /sitemap.xml
+  关于: /about
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #douban: "#"
-  #mail: "#"
+  #github: "#"
+  #weibo: "#"
+  rss: "/atom.xml"
+  #zhihu: "#"
+  #douban: 'javascript:(function() {function c() {var e = document.createElement("link");e.setAttribute("type", "text/css");e.setAttribute("rel", "stylesheet");e.setAttribute("href", f);e.setAttribute("class", l);document.body.appendChild(e)} function h() {var e = document.getElementsByClassName(l);for (var t = 0; t < e.length; t++) {document.body.removeChild(e[t])}} function p() {var e = document.createElement("div");e.setAttribute("class", a);document.body.appendChild(e);setTimeout(function() {document.body.removeChild(e)}, 100)} function d(e) {return {height : e.offsetHeight,width : e.offsetWidth}} function v(i) {var s = d(i);return s.height > e && s.height < n && s.width > t && s.width < r} function m(e) {var t = e;var n = 0;while (!!t) {n += t.offsetTop;t = t.offsetParent}return n} function g() {var e = document.documentElement;if (!!window.innerWidth) {return window.innerHeight} else if (e && !isNaN(e.clientHeight)) {return e.clientHeight}return 0} function y() {if (window.pageYOffset) {return window.pageYOffset}return Math.max(document.documentElement.scrollTop, document.body.scrollTop)} function E(e) {var t = m(e);return t >= w && t <= b + w} function S() {var e = document.createElement("audio");e.setAttribute("class", l);e.src = i;e.loop = false;e.addEventListener("canplay", function() {setTimeout(function() {x(k)}, 500);setTimeout(function() {N();p();for (var e = 0; e < O.length; e++) {T(O[e])}}, 15500)}, true);e.addEventListener("ended", function() {N();h()}, true);e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";document.body.appendChild(e);e.play()} function x(e) {e.className += " " + s + " " + o} function T(e) {e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]} function N() {var e = document.getElementsByClassName(s);var t = new RegExp("\\b" + s + "\\b");for (var n = 0; n < e.length; ) {e[n].className = e[n].className.replace(t, "")}} var e = 30;var t = 30;var n = 350;var r = 350;var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";var s = "mw-harlem_shake_me";var o = "im_first";var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];var a = "mw-strobe_light";var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";var l = "mw_added_css";var b = g();var w = y();var C = document.getElementsByTagName("*");var k = null;for (var L = 0; L < C.length; L++) {var A = C[L];if (v(A)) {if (E(A)) {k = A;break}}}if (A === null) {console.warn("Could not find a node of the right size. Please try a different page.");return}c();S();var O = [];for (var L = 0; L < C.length; L++) {var A = C[L];if (v(A)) {O.push(A)}}})()'
+  mail: "mailto:korvin101@gmail.com"
   #facebook: "#"
-  #google: "#"
+  google: "https://plus.google.com/111532334496823887369/posts?hl=zh-CN"
   #twitter: "#"
   #linkedin: "#"
+  pinboard: 'javascript:(function() {function c() {var e = document.createElement("link");e.setAttribute("type", "text/css");e.setAttribute("rel", "stylesheet");e.setAttribute("href", f);e.setAttribute("class", l);document.body.appendChild(e)} function h() {var e = document.getElementsByClassName(l);for (var t = 0; t < e.length; t++) {document.body.removeChild(e[t])}} function p() {var e = document.createElement("div");e.setAttribute("class", a);document.body.appendChild(e);setTimeout(function() {document.body.removeChild(e)}, 100)} function d(e) {return {height : e.offsetHeight,width : e.offsetWidth}} function v(i) {var s = d(i);return s.height > e && s.height < n && s.width > t && s.width < r} function m(e) {var t = e;var n = 0;while (!!t) {n += t.offsetTop;t = t.offsetParent}return n} function g() {var e = document.documentElement;if (!!window.innerWidth) {return window.innerHeight} else if (e && !isNaN(e.clientHeight)) {return e.clientHeight}return 0} function y() {if (window.pageYOffset) {return window.pageYOffset}return Math.max(document.documentElement.scrollTop, document.body.scrollTop)} function E(e) {var t = m(e);return t >= w && t <= b + w} function S() {var e = document.createElement("audio");e.setAttribute("class", l);e.src = i;e.loop = false;e.addEventListener("canplay", function() {setTimeout(function() {x(k)}, 500);setTimeout(function() {N();p();for (var e = 0; e < O.length; e++) {T(O[e])}}, 15500)}, true);e.addEventListener("ended", function() {N();h()}, true);e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";document.body.appendChild(e);e.play()} function x(e) {e.className += " " + s + " " + o} function T(e) {e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]} function N() {var e = document.getElementsByClassName(s);var t = new RegExp("\\b" + s + "\\b");for (var n = 0; n < e.length; ) {e[n].className = e[n].className.replace(t, "")}} var e = 30;var t = 30;var n = 350;var r = 350;var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";var s = "mw-harlem_shake_me";var o = "im_first";var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];var a = "mw-strobe_light";var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";var l = "mw_added_css";var b = g();var w = y();var C = document.getElementsByTagName("*");var k = null;for (var L = 0; L < C.length; L++) {var A = C[L];if (v(A)) {if (E(A)) {k = A;break}}}if (A === null) {console.warn("Could not find a node of the right size. Please try a different page.");return}c();S();var O = [];for (var L = 0; L < C.length; L++) {var A = C[L];if (v(A)) {O.push(A)}}})()'
 
 rss: /atom.xml
 
 # Content
-excerpt_link: more
+excerpt_link: 阅读全文
 fancybox: true
 mathjax: true
 
@@ -35,29 +39,30 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: 
+avatar: "/headimg.jpg"
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: true
+duoshuo: iblogc
 #是否开启云标签
 tagcloud: true
 
 #是否开启友情链接
 #不开启——
-#friends: false
+friends: false
 #开启——
 friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
+  虚位以待: ####
+  #奥巴马的博客: http://localhost:4000/
+  #卡卡的美丽传说: http://localhost:4000/
+  # 本泽马的博客: http://localhost:4000/
+  # 吉格斯的博客: http://localhost:4000/
+  # 习大大大不同: http://localhost:4000/
+  # 托蒂的博客: http://localhost:4000/
 
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 大龄男青年一杖……

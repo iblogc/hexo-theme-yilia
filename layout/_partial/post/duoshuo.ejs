@@ -1,3 +1,4 @@
+
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="<%=key%>" data-title="<%=title%>" data-url="<%=url%>"></div>
@@ -8,11 +9,12 @@
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.src = 'http://iblogc.qiniudn.com/duoshuo/embed_v20150509.02.js';
 		ds.charset = 'UTF-8';
 		(document.getElementsByTagName('head')[0] 
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 	</script>
+    <!-- <script src="http://iblogc.qiniudn.com/duoshuo/ua-parser.min.js"></script> -->
 	<!-- 多说公共JS代码 end -->
 </div>

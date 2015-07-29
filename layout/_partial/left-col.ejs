@@ -66,13 +66,13 @@
 						<ul>
 						<% for (var i in theme.menu){ %>
 							<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-				        <%}%>
+				        <%}%>				      		    
 						</ul>
 					</nav>
 					<nav class="header-nav">
 						<div class="social">
 							<% for (var i in theme.subnav){ %>
-								<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
+								<a class="<%= i %>" target="_blank" href='<%- url_for(theme.subnav[i]) %>' title="<%= i %>"><%= i %></a>
 					        <%}%>
 						</div>
 					</nav>
