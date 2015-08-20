@@ -24,6 +24,12 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
       <% } else { %>
+		<% if (!index){ %>
+	      <div id="toc" class="article-toc">
+			<%- toc(post.content, {list_number: false}) %>
+            <hr/>
+          </div>
+        <% } %>
         <%- post.content %>
       <% } %>
     </div>
