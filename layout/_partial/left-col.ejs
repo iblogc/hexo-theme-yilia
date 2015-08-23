@@ -25,9 +25,15 @@
 							<div class="birdhouse"></div>
 							<div class="birdhouse_holes"></div>
 						</div>
+						
 						<div class="icon-wrap icon-ribbon hide" data-idx="1">
 							<div class="ribbon"></div>
 						</div>
+						
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
 						<%if(theme.friends && theme.friends.length != 0){%>
 						<div class="icon-wrap icon-link hide" data-idx="2">
 							<div class="loopback_l"></div>
@@ -48,6 +54,7 @@
 					<ul class="tips-inner">
 						<li>菜单</li>
 						<li>标签</li>
+						<li>分类</li>
 						<%if(theme.friends && theme.friends.length != 0){%>
 						<li>友情链接</li>
 						<%}%>
@@ -85,9 +92,17 @@
 					</div>
 				</section>
 				<%}%>
+			
+				
+				<section class="switch-part switch-part3">
+					<div class="widget tagcloud" id="js-list_categories">
+						<%- list_categories({show_count:false}) %>
+					</div>
+				</section>
+		
 				
 				<%if(theme.friends && theme.friends.length != 0){%>
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part4">
 					<div id="js-friends">
 					<% for (var i in theme.friends){ %>
 			          <a target="_blank" class="main-nav-link switch-friends-link" href="<%- url_for(theme.friends[i]) %>"><%= i %></a>
@@ -98,9 +113,9 @@
 
 				<%if(theme.aboutme){%>
 				<%if(!theme.friends){%>
-				<section class="switch-part switch-part3">
-				<%}else{%>
 				<section class="switch-part switch-part4">
+				<%}else{%>
+				<section class="switch-part switch-part5">
 				<%}%>
 					<div id="js-aboutme"><%=theme.aboutme%></div>
 				</section>
