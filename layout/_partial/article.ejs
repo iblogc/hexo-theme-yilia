@@ -26,9 +26,9 @@
       <% } else { %>
 		<% if (!index){ %>
 	      <div id="toc" class="article-toc">
-			<%- toc(post.content, {list_number: false}) %>
-            <hr/>
-          </div>
+        <h2>目录</h2>
+          <%- toc(post.content) %>
+        </div>
         <% } %>
         <%- post.content %>
       <% } %>
