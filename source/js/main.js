@@ -106,6 +106,7 @@ require([], function (){
 		$(".article a[href]").attr("target", "_blank")
 	}	
   
+  function changeColor(){
     //随机取颜色
     //$(".left-col .overlay").css({"background-color": '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6),"opacity": 1});
     //从给定的颜色值中选
@@ -115,7 +116,9 @@ require([], function (){
     $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": 1});
     //PC页面
     $("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": 1});
-
+  }
+  changeColor();
+  function search(){
     // swiftype搜索
     (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
     (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
@@ -123,4 +126,7 @@ require([], function (){
     })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
     _st('install','jza1LHWu1bhF8xMFQDod','2.0.0'); 
+  }
+  search();
+    
 });
