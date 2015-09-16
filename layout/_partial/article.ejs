@@ -74,6 +74,7 @@
     title: post.title,
     url: config.url+url_for(post.path)
   }) %>
+<%- css('css/font') %>
 <% } %>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
