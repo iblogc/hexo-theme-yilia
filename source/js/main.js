@@ -112,12 +112,15 @@ require([], function (){
     //从给定的颜色值中选
     var colorList = ["#FFF", "#00CC66", "#ff945c", "#0099FF", "#996666", "#99CCCC", "#99CC99", "#CC6666"];
     var id = Math.ceil(Math.random()*(colorList.length-1));
+    var colors = {"background-color": colorList[id],"opacity": 1,"transition":"all 0.2 ease-in","-ms-transition":"all 0.2 ease-in","-moz-transition":"all 0.2 ease-in","-webkit-transition":"all 0.2s ease-in"}
     //移动页面
-    $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": 1});
+    $("#container #mobile-nav .overlay").css(colors);
     //PC页面
-    $("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": 1});
+    $("#container .left-col .overlay").css(colors);
   }
-  changeColor();
+  
+  setTimeout(changeColor,1000);
+  
   function search(){
     // swiftype搜索
     (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -127,6 +130,6 @@ require([], function (){
 
     _st('install','jza1LHWu1bhF8xMFQDod','2.0.0'); 
   }
-  search();
-    
+  
+  setTimeout(search,1000);    
 });
